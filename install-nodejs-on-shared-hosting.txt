@@ -1,0 +1,16 @@
+# Make a new folder for node
+mkdir node
+cd node
+# Download and unzip node
+curl -O https://nodejs.org/dist/v10.15.3/node-v10.15.3-linux-x64.tar.gz
+tar -xvzf node-v10.15.3-linux-x64.tar.gz --strip-components=1
+# Add node and npm it to PATH (and do so for future sessions too)
+export PATH=$HOME/node/bin:$PATH
+echo 'export PATH=$HOME/node/bin:$PATH' >> ~/.bashrc
+
+
+
+
+//Check Version
+node -v
+npm -v
